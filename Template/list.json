@@ -1,0 +1,50 @@
+let booklist = [
+    {
+        'id' : 1,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+    {
+        'id' : 2,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+    {
+        'id' : 3,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+    {
+        'id' : 4,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+    {
+        'id' : 5,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+    {
+        'id' : 6,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+    {
+        'id' : 7,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+    {
+        'id' : 8,
+        'name' : 'PHP special',
+        'author': 'anyone',
+        'detail' : 'php is the server side programming language. bar nyar'
+    },
+]

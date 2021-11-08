@@ -1,0 +1,59 @@
+/*======= INPUT And BUTTON======*/
+input,.btn {
+    padding: 8px 15px;
+    border: 1px solid var(--first-color);
+    border-radius: 2px;
+}
+
+.btn {
+    margin: 14px;
+    cursor: pointer;
+}
+
+.primary_btn {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+.primary_btn:hover {
+    color: var(--text-color);
+    background-color: var(--first-color);
+}
+
+/* ===== hr line =====*/
+.hr_text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: var(--text-color);
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+
+.hr_text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, var(--first-color), transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr_text:after {
+    content: "</>";
+    position: relative;
+    display: inline-block;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: var(--first-color);
+    background-color: var(--body-color);
+}
+
+/*======= TITLE =====*/
+.book_list_title, .hr_container {
+    margin-top: 40px;
+    text-align: center;
+}

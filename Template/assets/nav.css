@@ -1,0 +1,127 @@
+
+/*======== NAV ===== */
+.nav {
+    max-width: 900px;
+    height: calc(var(--header-height) + 1rem);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closebtn, .nav__toggle, .search_box{
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 0;
+        overflow-x: hidden;
+        padding: 8rem 0 1rem;
+        text-align: center;
+        background-color: var(--body-color);
+        transition: .4s;
+        box-shadow: 0 4px 4px rgba(0,0,0,.1);
+        /* border-radius: 0 0 1rem 1rem; */
+        z-index: var(--z-fixed);
+    }
+
+    .closebtn, .nav__toggle, .search_box{
+        display: block;
+    }
+    /*===== SHOW MENU =====*/
+    .show_menu {
+        width: 200px;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        font-size: 30px;
+        color: var(--text-color);
+        margin-right: 50px;
+    }
+    .nav__toggle {
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    
+}
+
+.nav_item {
+    margin-bottom: var(--mb-2);
+}
+
+.nav_link, .nav__logo, .nav__toggle {
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+    color: var(--first-color);
+}
+
+.nav_link {
+    transition: .3s;
+}
+
+.nav_link:hover {
+    color: var(--first-color);
+}
+
+
+@media screen and (min-width:768px) {
+    body {
+        margin: 0;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav_item {
+        margin-left: var(--mb-4);
+        margin-bottom: 0;
+    }
+
+
+}
+
+
+/*=== ==== MOBILE NAV ====*/
+.mobile_nav {
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .mobile_nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        height: calc(var(--header-height) + 1.5rem);
+        box-shadow: 0 -2px 5px -2px rgba(148, 147, 147, 0.1);
+        width: 100%;
+        background-color: var(--body-color);
+    }
+
+    .mobile_nav_item {
+        align-content: center;
+        color: var(--text-color);
+        padding: 12px 16px;
+        border-radius: 50px;
+        
+    }
+
+    .mobile_nav_item span{
+        display: block;
+    }
+
+        
+}
