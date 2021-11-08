@@ -120,7 +120,7 @@ body.dark-theme {
 
 /*======= LAYOUT =====*/
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     width: calc(100% - 2rem);
     margin: 0 auto;
     text-align: center;

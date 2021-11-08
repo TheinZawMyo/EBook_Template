@@ -1,107 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free EBook</title>
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <!-- header -->
-    <header class='l-header' id='header'>
-        <nav class="nav container flex-container">
-            <a href="#" class="nav__logo">EBook</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Free EBook</title>
+        <link
+            href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <header class="l-header" id="header">
+            <nav class="nav container flex-container">
+                <a href="#" class="nav__logo">EBook</a>
 
-            <div class="search_box">
-                <input type="search" name="" id="" placeholder="Search">
-            </div>
+                <div class="search_box">
+                    <input type="search" name="" id="" placeholder="Search" />
+                </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <a href="javascript:void(0)" class="closebtn" id='closeBtn'>&times;</a>
-                <ul class="nav__list">
-                    <li class="nav_item"><a href="#" class="nav_link">မူလ</a></li>
-                    <li class="nav_item"><a href="javascript:void(0);" class="nav_link modal_btn">အမျိုးအစားများ</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">စိတ်ကြိုက်</a></li>
-                    <li><i class='bx bx-moon change_theme' id="theme_btn"></i></li>
-                </ul>
-            </div>
-                
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+                <div class="nav__menu" id="nav-menu">
+                    <a href="javascript:void(0)" class="closebtn" id="closeBtn"
+                        >&times;</a
+                    >
+                    <ul class="nav__list">
+                        <li class="nav_item">
+                            <a href="#" class="nav_link">မူလ</a>
+                        </li>
+                        <li class="nav_item">
+                            <a
+                                href="javascript:void(0);"
+                                class="nav_link modal_btn"
+                                >အမျိုးအစားများ</a
+                            >
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class="nav_link">စိတ်ကြိုက်</a>
+                        </li>
+                        <li>
+                            <i
+                                class="bx bx-moon change_theme"
+                                id="theme_btn"
+                            ></i>
+                        </li>
+                    </ul>
+                </div>
 
-        <!-- Mobile Bottom Nav -->
-        <nav class="mobile_nav">
-            <a href="#" class="mobile_nav_item">
-                <i class='bx bx-home'></i>
-                <span>မူလ</span>
-            </a>
-            <a href="javascript:void(0);" class="mobile_nav_item modal_btn">
-                <i class='bx bx-list-ul'></i>
-                <span>အမျိုးအစားများ</span>
-            </a>
-            <a href="#" class="mobile_nav_item">
-                <i class='bx bx-heart'></i>
-                <span>စိတ်ကြိုက်</span>
-            </a>
-        </nav>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
 
-    </header>
+            <!-- Mobile Bottom Nav -->
+            <nav class="mobile_nav">
+                <a href="#" class="mobile_nav_item">
+                    <i class="bx bx-home"></i>
+                    <span>မူလ</span>
+                </a>
+                <a href="javascript:void(0);" class="mobile_nav_item modal_btn">
+                    <i class="bx bx-list-ul"></i>
+                    <span>အမျိုးအစားများ</span>
+                </a>
+                <a href="#" class="mobile_nav_item">
+                    <i class="bx bx-heart"></i>
+                    <span>စိတ်ကြိုက်</span>
+                </a>
+            </nav>
+        </header>
 
-    <!-- Main page -->
-    <div class="container">
-        <div class="top_wrapper flex-container">
-            <div class="main_title">
-                <h1><span class="color_title">Free</span> EBook</h1>
-                <span>PDF စာအုပ်များ Download ဆွဲနိုင်ပါသည်။</span><br>
-                <button class="btn primary_btn">Download</button>
-            </div>
-            <div class="main_img">
-                <img src="img/book_lover.svg" alt="Book">
-            </div>
-        </div>
-    </div>
-
-    <div class="container hr_container">
-        <hr class="hr_text">
-    </div>
-    <!-- book list -->
-    <div class="container">
-        <h2 class="book_list_title">စာအုပ်စာရင်း</h2>
-        <span>မိမိနှစ်သက်ရာစာအုပ်များကို Download ဆွဲ၍ ဖတ်ရှုနိုင်ပါသည်။</span>
-
-        <div class="card_container" id='name'>
-           
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal" id="modal">
-        <div class="modal_content">
-            <span class="close">&times;</span>
-            <div class="category_list">
-                <div class="category">Hello</div>
-                <div class="category">Hello</div>
-                <div class="category">Hello</div>
-                <div class="category">Hello</div>
-                <div class="category">Hello</div>
-                <div class="category">Hello</div>
+        <!-- Main page -->
+        <div class="container">
+            <div class="top_wrapper flex-container">
+                <div class="main_title">
+                    <h1><span class="color_title">Free</span> EBook</h1>
+                    <span>PDF စာအုပ်များ Download ဆွဲနိုင်ပါသည်။</span><br />
+                    <button class="btn primary_btn">Download</button>
+                </div>
+                <div class="main_img">
+                    <img src="img/book_lover.svg" alt="Book" />
+                </div>
             </div>
         </div>
-    </div>
 
+        <div class="container hr_container">
+            <hr class="hr_text" />
+        </div>
+        <!-- book list -->
+        <div class="container">
+            <h2 class="book_list_title">စာအုပ်စာရင်း</h2>
+            <span
+                >မိမိနှစ်သက်ရာစာအုပ်များကို Download ဆွဲ၍
+                ဖတ်ရှုနိုင်ပါသည်။</span
+            >
 
-    <!-- footer -->
-    <div class="container footer_container">
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-    </div>
-</body>
-<script src="script.js"></script>
-<script src="list.json"></script>
-<script src="list_data.js"></script>
+            <div class="card_container" id="name"></div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal_content">
+                <span class="close">&times;</span>
+                <div class="category_list">
+                    <div class="category">Hello</div>
+                    <div class="category">Hello</div>
+                    <div class="category">Hello</div>
+                    <div class="category">Hello</div>
+                    <div class="category">Hello</div>
+                    <div class="category">Hello</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="container footer_container">
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="list.json"></script>
+    <script src="list_data.js"></script>
 </html>
